@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  background-color: #0bd9ef;
+}
+
+#level-title {
+  font-family: "Caveat", cursive;
+  font-family: "Rubik Iso", cursive;
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 5rem;
+  margin: 1%;
+  color: black;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 190px;
+  width: 190px;
+  border: 10px solid black;
+  border-radius: 20%;
+  /* Add the following line to add a margin of 10px between each box */
+  margin-bottom: 10px;
+
+  /* Add the following lines to make the squares turn into rhombus when hovered */
+  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(10deg);
+  }
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
